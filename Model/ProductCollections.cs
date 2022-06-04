@@ -4,6 +4,7 @@ namespace CRUDForProducts.Model
 {
     public class ProductCollections
     {
+#pragma warning disable
         public int Id { get; set; }
 
         [Display(Name = "Product name")]
@@ -23,7 +24,7 @@ namespace CRUDForProducts.Model
 
 
         [Display(Name = "AddedTime")]
-        [DataType(DataType.Date)]
+        [DataType(DataType.DateTime)]
         public DateTime CreatedDate { get; set; }
     }
 }

@@ -12,6 +12,9 @@ namespace CRUDForProducts.Data
         public CRUDForProductsContext (DbContextOptions<CRUDForProductsContext> options)
             : base(options)
         {
+
+            AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
+            AppContext.SetSwitch("Npgsql.DisableDateTimeInfinityConversions", true);
         }
 
         public DbSet<CRUDForProducts.Model.ProductCollections>? ProductCollections { get; set; }

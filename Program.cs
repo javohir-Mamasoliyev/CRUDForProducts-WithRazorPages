@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddDbContext<CRUDForProductsContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("CRUDForProductsContext") ?? throw new InvalidOperationException("Connection string 'CRUDForProductsContext' not found.")));
+    options.UseNpgsql(builder.Configuration.GetConnectionString("CRUDForProductsContext") ?? throw new InvalidOperationException("Connection string 'CRUDForProductsContext' not found.")));
 
 var app = builder.Build();
 

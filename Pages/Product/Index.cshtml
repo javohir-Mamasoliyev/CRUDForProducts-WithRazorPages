@@ -5,19 +5,22 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<div class="container-hom">
 
-<p>
-    <a asp-page="Create">Create New</a>
-</p>
+<div class="clreate-filter">
+      <p>
+                <a asp-page="Create" class="btn btn-primary" >Create New</a>
+       </p>
 
-<b/>
-<form asp-controller="Index" asp-action="Index" method="get">
-    <p>
-        Name : <input type ="text" name="SearchString"/>
-        <input type ="submit" value="Filter" /> 
-    </p>
-</form>
+    <b/>
+    <form asp-controller="Index" asp-action="Index" method="get">
+        <p>
+            Name :<input  placeholder="Search" type ="text" name="SearchString"/>
+            <input type ="submit" value="Filter" /> 
+        </p>
+    </form>
+</div>
+
 
 <table class="table">
     <thead>
@@ -59,11 +62,14 @@
                 @Html.DisplayFor(modelItem => item.CreatedDate)
             </td>
             <td>
-                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-page="./Edit" asp-route-id="@item.Id" class="btn btn-primary">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id" class="btn btn-secondary">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
             </td>
         </tr>
 }
     </tbody>
 </table>
+</div>
+
+

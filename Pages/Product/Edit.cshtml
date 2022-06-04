@@ -39,16 +39,14 @@
                 <input asp-for="ProductCollections.CreatedDate" class="form-control" />
                 <span asp-validation-for="ProductCollections.CreatedDate" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group save-back">
                 <input type="submit" value="Save" class="btn btn-primary" />
+                 <a asp-page="./Index" class="btn btn-dark">Back to List</a>
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-page="./Index">Back to List</a>
-</div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

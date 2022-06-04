@@ -16,3 +16,48 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.container-hom{
+    padding: 1rem;
+    background: black;
+}
+
+th{
+    color: #fff;
+}
+
+.container-hom tbody tr {
+    background: #616161;
+    padding: initial;
+}
+
+.container-hom tbody{
+    margin-bottom: 10px;
+}
+
+.clreate-filter {
+    display: flex;
+}
+
+.clreate-filter form{
+   padding-left: 1rem;
+}
+
+.container-hom tbody td{
+    color: #fff;
+}
+
+.container-hom .details {
+    background: #ffd740;
+}
+.row .save-back {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.create-content .create {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}

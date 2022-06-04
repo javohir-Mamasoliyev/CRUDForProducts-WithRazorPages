@@ -10,6 +10,7 @@ using CRUDForProducts.Model;
 
 namespace CRUDForProducts.Pages.Product
 {
+#pragma warning disable
     public class IndexModel : PageModel
     {
         private readonly CRUDForProducts.Data.CRUDForProductsContext _context;
